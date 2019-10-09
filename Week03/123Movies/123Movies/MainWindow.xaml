@@ -1,0 +1,45 @@
+﻿<Window x:Class="_123Movies.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_123Movies"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid x:Name="TitleLabel_Copy">
+        <TextBox x:Name="TitleTB1" HorizontalAlignment="Left" Height="21" Margin="130,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-29.553"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="6.52"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="Title1" Content="Movie Title" HorizontalAlignment="Left" Margin="11,8,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="29" Width="71">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.015"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label1" Content="Movie Genre" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,52,0,0" RenderTransformOrigin="0.722,1.928"/>
+        <TextBox x:Name="MovieGenre" HorizontalAlignment="Left" Height="27" Margin="133,52,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="121"/>
+        <Label x:Name="label" Content="Review Score" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,102,0,0" Width="78"/>
+        <TextBox x:Name="Review_Score" HorizontalAlignment="Left" Height="23" Margin="134,102,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Submit Movie" HorizontalAlignment="Left" Margin="108,210,0,0" VerticalAlignment="Top" Width="223" RenderTransformOrigin="0.5,0.5" Height="55" Click="button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.557"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+    </Grid>
+</Window>
