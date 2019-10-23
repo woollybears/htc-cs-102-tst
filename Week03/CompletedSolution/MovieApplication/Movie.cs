@@ -9,14 +9,20 @@ namespace MovieApplication
 {
     public class Movie
     {
-        public string Title;
+        public string Title { get; set; }
         public List<string> Actors;
-        public string Genre;
-        public double ReviewScore;
+        public string Genre { get; set; }
+        public double ReviewScore { get; set; }
 
         public void Watch()
         {
             
+        }
+        public Movie(string title, string genre, double reviewscore)
+        {
+            Title = title;
+            Genre = genre;
+            ReviewScore = reviewscore;
         }
     }
 }
