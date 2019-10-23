@@ -7,22 +7,30 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <TextBox x:Name="titleTextBox" HorizontalAlignment="Left" Height="23" Margin="10,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_TextChanged"/>
-        <Label x:Name="titleLabel" Content="Title" HorizontalAlignment="Left" Margin="10,188,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="genreLabel" Content="Genre" HorizontalAlignment="Left" Margin="159,188,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="genreTextBox" HorizontalAlignment="Left" Height="23" Margin="159,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="reviewScoreLabel" Content="Review Score" HorizontalAlignment="Left" Margin="353,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.026,0.077"/>
-        <TextBox x:Name="reviewScoreTextBox" HorizontalAlignment="Left" Height="23" Margin="353,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="submitMovieButton" Content="Submit" HorizontalAlignment="Left" Margin="85,272,0,0" VerticalAlignment="Top" Width="75" Click="submitMovieButton_Click"/>
+        <TextBox x:Name="titleTextBox" HorizontalAlignment="Left" Height="23" Margin="10,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_TextChanged"/>
+        <Label x:Name="titleLabel" Content="Title" HorizontalAlignment="Left" Margin="10,158,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="genreLabel" Content="Genre" HorizontalAlignment="Left" Margin="159,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.402,0.332"/>
+        <TextBox x:Name="genreTextBox" HorizontalAlignment="Left" Height="23" Margin="159,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="reviewScoreLabel" Content="Review Score" HorizontalAlignment="Left" Margin="306,158,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.026,0.077"/>
+        <TextBox x:Name="reviewScoreTextBox" HorizontalAlignment="Left" Height="23" Margin="306,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="submitMovieButton" Content="Submit" HorizontalAlignment="Left" Margin="219,289,0,0" VerticalAlignment="Top" Width="75" Click="submitMovieButton_Click"/>
         <ListView x:Name="MovieListview" HorizontalAlignment="Left" Height="153" VerticalAlignment="Top" Width="517" MouseDoubleClick="MovieListview_MouseDoubleClick">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Width="150" Header="Title" DisplayMemberBinding="{Binding Title}"></GridViewColumn>
-                    <GridViewColumn Width="150" Header="Genre" DisplayMemberBinding="{Binding Genre}"></GridViewColumn> 
-                    <GridViewColumn Width="150" Header="Review Score" DisplayMemberBinding="{Binding ReviewScore}"></GridViewColumn> 
+                    <GridViewColumn Width="150" Header="Genre" DisplayMemberBinding="{Binding Genre}"></GridViewColumn>
+                    <GridViewColumn Width="150" Header="Review Score" DisplayMemberBinding="{Binding ReviewScore}"></GridViewColumn>
+                    <GridViewColumn Width="150" Header="Director" DisplayMemberBinding="{Binding Director}"></GridViewColumn>
+                    <GridViewColumn Width="150" Header="Length" DisplayMemberBinding="{Binding Length}"></GridViewColumn>
                 </GridView>
             </ListView.View>
         </ListView>
+        <TextBox x:Name="DirectortextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="10,250,0,0" TextChanged="textBox_TextChanged_1"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,229,0,0" TextWrapping="Wrap" Text="Director" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="159,229,0,0" TextWrapping="Wrap" Text="Length" VerticalAlignment="Top" Width="65"/>
+        <TextBox x:Name="LengthtextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="147,250,0,0"/>
 
     </Grid>
 </Window>
