@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace InheritanceIntro
 {
     /// <summary>
@@ -49,6 +50,13 @@ namespace InheritanceIntro
             {
                 d.SayName();
             }
+            Duck duck = new InheritanceIntro.Duck(102, "Hai");
+        }
+
+        private void Quack(object sender, RoutedEventArgs e)
+        {
+            Duck duck = new InheritanceIntro.Duck(12, "Fredrich");
+            duck.Quack();
         }
     }
 }
