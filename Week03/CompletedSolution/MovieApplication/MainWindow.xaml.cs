@@ -28,19 +28,19 @@ namespace MovieApplication
             MovieListview.ItemsSource = MovieList;
         }
 
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
+        
 
         private void submitMovieButton_Click(object sender, RoutedEventArgs e)
         {
-            Movie submittedMovie = new Movie(titleTextBox.Text, DirectortextBox.Text, genreTextBox.Text, LengthtextBox.Text, Double.Parse(reviewScoreTextBox.Text));
+            Movie submittedMovie = new Movie(titleTextBox.Text, genreTextBox.Text, YearTextBox.Text, Double.Parse(LengthtextBox.Text), DirectortextBox.Text, Double.Parse(reviewScoreTextBox.Text));
         
-           // submittedMovie.Title = titleTextBox.Text;
-            //submittedMovie.Genre = genreTextBox.Text;
-            //submittedMovie.ReviewScore = Convert.ToDouble(reviewScoreTextBox.Text);
-           //submittedMovie.ReviewScore = Double.Parse(reviewScoreTextBox.Text);
+           submittedMovie.Title = titleTextBox.Text;
+            submittedMovie.Genre = genreTextBox.Text;
+           submittedMovie.ReviewScore = Convert.ToDouble(reviewScoreTextBox.Text);
+            submittedMovie.Director = DirectortextBox.Text;
+            submittedMovie.Length = Double.Parse(LengthtextBox.Text);
+            submittedMovie.Year = YearTextBox.Text;
+
             MovieList.Add(submittedMovie);
         }
 
