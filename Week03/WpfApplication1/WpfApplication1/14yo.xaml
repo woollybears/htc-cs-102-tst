@@ -1,0 +1,18 @@
+﻿<Window x:Class="WpfApplication1._14yo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="_14yo" Height="300" Width="400">
+    <Grid>
+        
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="32,52,0,0" TextWrapping="Wrap" Text="Your parents stopped traffic in order to grab your basketball. You played for another 2 hours." VerticalAlignment="Top" Width="299" Height="34"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="32,101,0,0" TextWrapping="Wrap" Text="You have a huge test coming up! You do not know any of the material, and your grades are plummeting. You have to find a way through the situation!" VerticalAlignment="Top" Width="328" Height="70"/>
+        <Button x:Name="button" Content="Copy off of the kid next to you" HorizontalAlignment="Left" Height="46" Margin="32,158,0,0" VerticalAlignment="Top" Width="179" Click="button_Click"/>
+        <Button x:Name="button1" Content="Study for 5 hours the night before" HorizontalAlignment="Left" Margin="32,209,0,0" VerticalAlignment="Top" Width="209" Height="38" Click="button1_Click"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="You are 14 years old." VerticalAlignment="Top" Width="192"/>
+
+    </Grid>
+</Window>

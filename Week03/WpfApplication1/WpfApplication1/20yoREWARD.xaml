@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApplication1._20yoREWARD"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d"
+        Title="_20yoREWARD" Height="300" Width="300">
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="23,10,0,0" TextWrapping="Wrap" Text="You are now 18 years old" VerticalAlignment="Top" Width="229"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="34,49,0,0" TextWrapping="Wrap" Text="Your parents are extremely proud of your study skills, and buy you a puppy named Soybean." VerticalAlignment="Top" Width="218" Height="49"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="34,103,0,0" TextWrapping="Wrap" Text="You have graduated high school! Your GPA throughout high school stayed at a steady 4.0. A lot of colleges are trying to accept you, so choose wisely! (Type the college you would like to join.)" VerticalAlignment="Top" Width="226" Height="83"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="34,191,0,0" TextWrapping="Wrap" Text="Your College" VerticalAlignment="Top" Width="209"/>
+        <Button x:Name="button" Content="Apply" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="48,230,0,0" Click="button_Click"/>
+
+    </Grid>
+</Window>
