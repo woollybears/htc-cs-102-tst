@@ -15,34 +15,21 @@ using System.Windows.Shapes;
 namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for _14yo.xaml
+    /// Interaction logic for ComColl.xaml
     /// </summary>
-    public partial class _14yo : Window
+    public partial class ComColl : Window
     {
-        public _14yo()
+        public ComColl()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            this.Hide();
-            _20yoREWARD window = new _20yoREWARD();
-            window.Show();
-         
-        }
-
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            SchoolLife window = new SchoolLife();
             this.Hide();
-            _20yo window1 = new _20yo();
-            window1.Show();
-        }
+            window.Show();
 
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
-            Relationships window1 = new Relationships();
-            window1.Show();
         }
     }
 }

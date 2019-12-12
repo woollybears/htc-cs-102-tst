@@ -13,6 +13,7 @@
         <Button x:Name="button" Content="Copy off of the kid next to you" HorizontalAlignment="Left" Height="46" Margin="32,158,0,0" VerticalAlignment="Top" Width="179" Click="button_Click"/>
         <Button x:Name="button1" Content="Study for 5 hours the night before" HorizontalAlignment="Left" Margin="32,209,0,0" VerticalAlignment="Top" Width="209" Height="38" Click="button1_Click"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="You are 14 years old." VerticalAlignment="Top" Width="192"/>
+        <Button x:Name="button2" Content="Relationships" HorizontalAlignment="Left" Margin="285,171,0,0" VerticalAlignment="Top" Width="97" Click="button2_Click"/>
 
     </Grid>
 </Window>

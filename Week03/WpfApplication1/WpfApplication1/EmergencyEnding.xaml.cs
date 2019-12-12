@@ -15,34 +15,25 @@ using System.Windows.Shapes;
 namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for _14yo.xaml
+    /// Interaction logic for EmergencyEnding.xaml
     /// </summary>
-    public partial class _14yo : Window
+    public partial class EmergencyEnding : Window
     {
-        public _14yo()
+        public EmergencyEnding()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
         {
-            this.Hide();
-            _20yoREWARD window = new _20yoREWARD();
-            window.Show();
-         
+
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow window = new MainWindow();
             this.Hide();
-            _20yo window1 = new _20yo();
-            window1.Show();
-        }
-
-        private void button2_Click(object sender, RoutedEventArgs e)
-        {
-            Relationships window1 = new Relationships();
-            window1.Show();
+            window.Show();
         }
     }
 }

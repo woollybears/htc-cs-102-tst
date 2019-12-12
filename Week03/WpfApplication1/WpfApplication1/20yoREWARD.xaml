@@ -10,8 +10,9 @@
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="23,10,0,0" TextWrapping="Wrap" Text="You are now 18 years old" VerticalAlignment="Top" Width="229"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="34,49,0,0" TextWrapping="Wrap" Text="Your parents are extremely proud of your study skills, and buy you a puppy named Soybean." VerticalAlignment="Top" Width="218" Height="49"/>
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="34,103,0,0" TextWrapping="Wrap" Text="You have graduated high school! Your GPA throughout high school stayed at a steady 4.0. A lot of colleges are trying to accept you, so choose wisely! (Type the college you would like to join.)" VerticalAlignment="Top" Width="226" Height="83"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="34,191,0,0" TextWrapping="Wrap" Text="Your College" VerticalAlignment="Top" Width="209"/>
-        <Button x:Name="button" Content="Apply" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="48,230,0,0" Click="button_Click"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="34,191,0,0" TextWrapping="Wrap" Text="Your College" VerticalAlignment="Top" Width="209" TextChanged="textBox_TextChanged"/>
+        <Button x:Name="button" Content="Apply" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="49,214,0,0" Click="button_Click"/>
+        <Button x:Name="button1" Content="Continue" HorizontalAlignment="Left" Margin="96,239,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
 
     </Grid>
 </Window>

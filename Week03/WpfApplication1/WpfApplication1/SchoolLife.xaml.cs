@@ -15,52 +15,46 @@ using System.Windows.Shapes;
 namespace WpfApplication1
 {
     /// <summary>
-    /// Interaction logic for _20yoREWARD.xaml
+    /// Interaction logic for SchoolLife.xaml
     /// </summary>
-    public partial class _20yoREWARD : Window
+    public partial class SchoolLife : Window
     {
-        string College = "null";
-        public _20yoREWARD()
+        public SchoolLife()
         {
             InitializeComponent();
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
             Random r = new Random();
             int genRand = r.Next(1, 3);
             if (genRand == 1)
             {
-                MessageBox.Show("Accepted!");
+                MessageBox.Show("Your in!");
             }
             if (genRand == 2)
             {
-                MessageBox.Show("Denied.");
+                MessageBox.Show("Sorry, you aren't their type.");
             }
-
+            string Place = Convert.ToString(genRand);
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            SchoolLife window = new SchoolLife();
-            this.Hide();
+            Friendships window = new Friendships();
             window.Show();
         }
 
-        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void button2_Click(object sender, RoutedEventArgs e)
         {
-            College = textBox.Text;
+            Grad window = new WpfApplication1.Grad();
+            this.Hide();
+            window.Show();
         }
-               public void Col()
-        {
-            if (College == "My College")
-                {
-                MessageBox.Show("You chose not to go to college. You end up unemployed and unable to sustain yourself. You die lonely, and in debt.");
-                }
-            else
-                {
-                MessageBox.Show("Thanks for applying to " + College + "!");
-                }
-        }
-    } 
+    }
 }

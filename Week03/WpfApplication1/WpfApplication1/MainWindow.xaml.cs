@@ -20,8 +20,10 @@ namespace WpfApplication1
     /// </summary>
     public partial class MainWindow : Window
     {
+        
         public MainWindow()
         {
+           
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
